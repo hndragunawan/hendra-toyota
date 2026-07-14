@@ -1,127 +1,448 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Simulasi Kredit Toyota | Hendra Gunawan</title>
-<meta name="description" content="Simulasi kredit Toyota bersama Hendra Gunawan Sales Consultant Setiajaya Toyota.">
+
+<title>Simulasi Kredit Toyota | Hendra Gunawan | Setiajaya Toyota</title>
+
+<meta name="description"
+content="Hitung simulasi kredit Toyota dengan mudah bersama Hendra Gunawan Sales Consultant Setiajaya Toyota.">
+
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/responsive.css">
 <link rel="stylesheet" href="css/animation.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+
 </head>
+
 <body>
 
+<div id="loader" class="loader"></div>
+
 <header class="header">
-  <div class="container">
-    <a class="logo" href="index.html">
-      <strong>Setiajaya Toyota</strong><br>
-      <span>Hendra Gunawan</span>
-    </a>
-    <nav id="navbar">
-      <a href="index.html">Home</a>
-      <a href="produk.html">Produk</a>
-      <a href="promo.html">Promo</a>
-      <a href="simulasi.html" class="active">Simulasi</a>
-      <a href="tentang.html">Tentang</a>
-      <a href="kontak.html">Kontak</a>
-    </nav>
-  </div>
+
+<div class="container">
+
+<a href="index.html" class="logo">
+
+<img src="img/logo/toyota-logo.png" alt="Toyota">
+
+<div>
+
+<h2>SETIAJAYA TOYOTA</h2>
+
+<span>Hendra Gunawan</span>
+
+</div>
+
+</a>
+
+<nav id="navbar">
+
+<a href="index.html">Home</a>
+
+<a href="produk.html">Produk</a>
+
+<a href="promo.html">Promo</a>
+
+<a href="simulasi.html" class="active">Simulasi</a>
+
+<a href="tentang.html">Tentang</a>
+
+<a href="kontak.html">Kontak</a>
+
+</nav>
+
+<div class="header-button">
+
+<a href="tel:08159413441" class="btn-call">
+
+<i class="ri-phone-fill"></i>
+
+Telepon
+
+</a>
+
+<a href="https://wa.me/628159413441"
+
+class="btn-wa">
+
+<i class="ri-whatsapp-fill"></i>
+
+WhatsApp
+
+</a>
+
+<button id="menu-toggle">
+
+<i class="ri-menu-3-line"></i>
+
+</button>
+
+</div>
+
+</div>
+
 </header>
 
 <section class="hero">
-  <div class="container">
-    <div class="hero-content">
-      <span>Simulasi Kredit Toyota</span>
-      <h1>Hitung Estimasi Kredit Mobil Toyota</h1>
-      <p>Pilih model, masukkan harga OTR, DP, dan tenor. Hasil ini hanya estimasi awal dan dapat berbeda sesuai program leasing.</p>
-    </div>
-  </div>
-</section>
 
-<section>
-<div class="container">
+<div class="container hero-container">
 
-<div class="card" style="max-width:700px;margin:auto;">
-<h2 style="margin-bottom:20px;">Kalkulator Simulasi</h2>
+<div class="hero-content">
 
-<label>Model Toyota</label>
-<select id="mobil" style="width:100%;padding:12px;margin:10px 0 18px;">
-<option value="205000000">Calya</option>
-<option value="293000000">Avanza</option>
-<option value="343000000">Veloz</option>
-<option value="410000000">Innova Reborn</option>
-<option value="485000000">Innova Zenix</option>
-<option value="1470000000">Alphard</option>
-</select>
+<span class="badge">
 
-<label>Harga OTR (Rp)</label>
-<input id="harga" type="number" style="width:100%;padding:12px;margin:10px 0 18px;">
+SIMULASI KREDIT TOYOTA
 
-<label>DP (Rp)</label>
-<input id="dp" type="number" style="width:100%;padding:12px;margin:10px 0 18px;" placeholder="Contoh: 50000000">
+</span>
 
-<label>Tenor (Bulan)</label>
-<select id="tenor" style="width:100%;padding:12px;margin:10px 0 24px;">
-<option value="12">12</option>
-<option value="24">24</option>
-<option value="36">36</option>
-<option value="48">48</option>
-<option value="60" selected>60</option>
-</select>
+<h1>
 
-<button class="btn" onclick="hitung()">Hitung Estimasi</button>
+Hitung Estimasi Kredit Mobil Toyota
 
-<div id="hasil" style="margin-top:25px;font-size:1.1rem;font-weight:600;"></div>
+</h1>
 
-<p style="margin-top:25px;">
-<a class="btn" href="https://wa.me/628159413441?text=Halo%20Pak%20Hendra,%20saya%20ingin%20simulasi%20kredit%20Toyota.">
-Kirim ke WhatsApp
-</a>
+<p>
+
+Pilih model Toyota,
+masukkan DP,
+pilih tenor,
+dan lihat estimasi angsuran bulanan.
+
 </p>
 
 </div>
 
+<div class="hero-image">
+
+<img src="img/hero/simulasi.webp"
+
+alt="Simulasi Toyota"
+
+class="float">
+
 </div>
+
+</div>
+
 </section>
 
+<section class="simulation">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>SIMULASI KREDIT</span>
+
+<h2>
+
+Kalkulator Kredit Toyota
+
+</h2>
+
+<p>
+
+Estimasi ini hanya sebagai gambaran awal.
+Nilai sebenarnya mengikuti program leasing yang berlaku.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<label>Model Toyota</label>
+
+<select id="mobil">
+
+<option value="205000000">Toyota Calya</option>
+
+<option value="293000000">Toyota Avanza</option>
+
+<option value="343000000">Toyota Veloz</option>
+
+<option value="410000000">Innova Reborn</option>
+
+<option value="485000000">Innova Zenix</option>
+
+<option value="1470000000">Toyota Alphard</option>
+
+</select>
+
+<label>Harga OTR</label>
+
+<input
+type="number"
+id="harga"
+readonly>
+
+<label>DP (Rp)</label>
+
+<input
+type="number"
+id="dp"
+placeholder="Masukkan DP">
+
+<label>Tenor</label>
+
+<select id="tenor">
+
+<option value="12">12 Bulan</option>
+
+<option value="24">24 Bulan</option>
+
+<option value="36">36 Bulan</option>
+
+<option value="48">48 Bulan</option>
+
+<option value="60" selected>60 Bulan</option>
+
+</select>
+
+<button
+class="btn"
+onclick="hitung()">
+
+Hitung Simulasi
+
+</button>
+
+<div id="hasil"
+style="margin-top:30px;"></div>
+
+</div>
+
+</div>
+
+</section>
+<!-- =========================================
+     CTA
+========================================= -->
+
+<section class="cta">
+
+    <div class="container">
+
+        <div class="cta-box">
+
+            <h2>
+
+                Butuh Simulasi yang Lebih Akurat?
+
+            </h2>
+
+            <p>
+
+                Hubungi Hendra Gunawan untuk mendapatkan
+                simulasi kredit resmi sesuai promo dan leasing
+                yang sedang berlaku.
+
+            </p>
+
+            <a href="https://wa.me/628159413441"
+
+            class="btn">
+
+                Konsultasi Sekarang
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
 <footer>
-<h3>Hendra Gunawan</h3>
-<p>Sales Consultant Setiajaya Toyota</p>
-<p>WhatsApp: 0815-9413-441</p>
-<p>Instagram: @hengun_blue | TikTok: @hengun54</p>
+
+    <div class="container footer-grid">
+
+        <div>
+
+            <h3>Setiajaya Toyota</h3>
+
+            <p>Hendra Gunawan</p>
+
+            <p>Sales Consultant</p>
+
+        </div>
+
+        <div>
+
+            <h3>Menu</h3>
+
+            <a href="index.html">Home</a><br>
+            <a href="produk.html">Produk</a><br>
+            <a href="promo.html">Promo</a><br>
+            <a href="kontak.html">Kontak</a>
+
+        </div>
+
+        <div>
+
+            <h3>Kontak</h3>
+
+            <p>📞 0815-9413-441</p>
+
+            <p>📷 @hengun_blue</p>
+
+            <p>🎵 @hengun54</p>
+
+        </div>
+
+    </div>
+
+    <div class="copyright">
+
+        © 2026 Hendra Gunawan • Sales Consultant Setiajaya Toyota
+
+    </div>
+
 </footer>
 
-<script>
-const mobil=document.getElementById('mobil');
-const harga=document.getElementById('harga');
-harga.value=mobil.value;
-mobil.addEventListener('change',()=>harga.value=mobil.value);
+<a href="https://wa.me/628159413441"
 
-function rupiah(v){
- return new Intl.NumberFormat('id-ID',{style:'currency',currency:'IDR',maximumFractionDigits:0}).format(v);
+class="floating-wa"
+
+target="_blank">
+
+💬
+
+</a>
+
+<a href="tel:08159413441"
+
+class="floating-call">
+
+📞
+
+</a>
+
+<button id="backToTop">
+
+↑
+
+</button>
+
+<script>
+
+const mobil = document.getElementById("mobil");
+const harga = document.getElementById("harga");
+
+harga.value = mobil.value;
+
+mobil.addEventListener("change", function(){
+
+    harga.value = this.value;
+
+});
+
+function rupiah(angka){
+
+    return new Intl.NumberFormat("id-ID",{
+
+        style:"currency",
+
+        currency:"IDR",
+
+        maximumFractionDigits:0
+
+    }).format(angka);
+
 }
 
 function hitung(){
- const h=Number(harga.value);
- const dp=Number(document.getElementById('dp').value);
- const tenor=Number(document.getElementById('tenor').value);
 
- if(!h || dp<0 || dp>=h){
-   document.getElementById('hasil').innerHTML='Masukkan harga dan DP yang valid.';
-   return;
- }
+    const otr = Number(harga.value);
 
- const pokok=h-dp;
- const bunga=0.05;
- const total=pokok*(1+bunga);
- const angsuran=total/tenor;
+    const dp = Number(document.getElementById("dp").value);
 
- document.getElementById('hasil').innerHTML=
- 'Estimasi angsuran: <br><strong>'+rupiah(angsuran)+'/bulan</strong><br><small>*Simulasi menggunakan asumsi sederhana (bunga 5%) dan bukan penawaran resmi.</small>';
+    const tenor = Number(document.getElementById("tenor").value);
+
+    if(dp <= 0){
+
+        alert("Masukkan DP terlebih dahulu");
+
+        return;
+
+    }
+
+    if(dp >= otr){
+
+        alert("DP tidak boleh lebih besar dari harga OTR");
+
+        return;
+
+    }
+
+    const pokok = otr - dp;
+
+    const bunga = 0.05;
+
+    const total = pokok + (pokok * bunga);
+
+    const angsuran = total / tenor;
+
+    document.getElementById("hasil").innerHTML = `
+
+    <div class="card">
+
+        <h3>Hasil Simulasi</h3>
+
+        <p><strong>Harga OTR :</strong> ${rupiah(otr)}</p>
+
+        <p><strong>DP :</strong> ${rupiah(dp)}</p>
+
+        <p><strong>Tenor :</strong> ${tenor} Bulan</p>
+
+        <h2 style="color:#EB0A1E">
+
+            ${rupiah(angsuran)}
+
+            <small>/bulan</small>
+
+        </h2>
+
+        <a href="https://wa.me/628159413441?text=Halo Pak Hendra, saya ingin konsultasi simulasi kredit Toyota."
+
+        class="btn"
+
+        style="margin-top:20px;display:inline-block;">
+
+            Kirim ke WhatsApp
+
+        </a>
+
+        <p style="margin-top:15px;font-size:.9rem;color:#777;">
+            *Estimasi menggunakan asumsi sederhana dengan bunga 5%.
+            Perhitungan akhir mengikuti program leasing dan promo yang berlaku.
+        </p>
+
+    </div>
+
+    `;
+
 }
+
 </script>
 
 <script src="js/script.js"></script>
 
 </body>
+
 </html>
