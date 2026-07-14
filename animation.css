@@ -1,0 +1,162 @@
+
+/* ==========================================
+   ANIMATION.CSS
+========================================== */
+
+:root{
+  --transition: .35s ease;
+}
+
+/* Fade In Up */
+.fade-up{
+  opacity:0;
+  transform:translateY(40px);
+  animation:fadeUp .8s ease forwards;
+}
+
+@keyframes fadeUp{
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+/* Fade In Left */
+.fade-left{
+  opacity:0;
+  transform:translateX(-40px);
+  animation:fadeLeft .8s ease forwards;
+}
+
+@keyframes fadeLeft{
+  to{
+    opacity:1;
+    transform:translateX(0);
+  }
+}
+
+/* Fade In Right */
+.fade-right{
+  opacity:0;
+  transform:translateX(40px);
+  animation:fadeRight .8s ease forwards;
+}
+
+@keyframes fadeRight{
+  to{
+    opacity:1;
+    transform:translateX(0);
+  }
+}
+
+/* Zoom In */
+.zoom-in{
+  opacity:0;
+  transform:scale(.9);
+  animation:zoomIn .7s ease forwards;
+}
+
+@keyframes zoomIn{
+  to{
+    opacity:1;
+    transform:scale(1);
+  }
+}
+
+/* Floating Image */
+.float{
+  animation:floating 4s ease-in-out infinite;
+}
+
+@keyframes floating{
+  0%,100%{transform:translateY(0);}
+  50%{transform:translateY(-12px);}
+}
+
+/* Pulse */
+.pulse{
+  animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+  0%{transform:scale(1);}
+  50%{transform:scale(1.05);}
+  100%{transform:scale(1);}
+}
+
+/* Ripple Button */
+.ripple{
+  position:relative;
+  overflow:hidden;
+}
+
+.ripple::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(255,255,255,.25);
+  transform:scale(0);
+  border-radius:999px;
+  transition:.5s;
+}
+
+.ripple:hover::after{
+  transform:scale(2.2);
+  opacity:0;
+}
+
+/* Hover Lift */
+.hover-lift{
+  transition:var(--transition);
+}
+
+.hover-lift:hover{
+  transform:translateY(-8px);
+}
+
+/* Loader */
+.loader{
+  position:fixed;
+  inset:0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#fff;
+  z-index:9999;
+}
+
+.loader::after{
+  content:"";
+  width:56px;
+  height:56px;
+  border:5px solid #eee;
+  border-top-color:#EB0A1E;
+  border-radius:50%;
+  animation:spin .9s linear infinite;
+}
+
+@keyframes spin{
+  to{transform:rotate(360deg);}
+}
+
+/* Smooth reveal helper */
+.reveal{
+  opacity:0;
+  transform:translateY(25px);
+  transition:all .7s ease;
+}
+
+.reveal.active{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* WhatsApp floating */
+.wa-float{
+  animation:waBounce 2.5s infinite;
+}
+
+@keyframes waBounce{
+  0%,100%{transform:translateY(0);}
+  50%{transform:translateY(-6px);}
+}
