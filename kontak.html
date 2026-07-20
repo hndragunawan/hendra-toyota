@@ -6,14 +6,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Kontak | Hendra Gunawan | Sales Consultant Setiajaya Toyota</title>
+<title>Kontak | Hendra Gunawan | Setiajaya Toyota</title>
 
 <meta name="description"
-content="Hubungi Hendra Gunawan Sales Consultant Setiajaya Toyota untuk promo Toyota, simulasi kredit, test drive, dan pembelian mobil Toyota di Jabodetabek.">
+content="Hubungi Hendra Gunawan Sales Consultant Setiajaya Toyota untuk informasi promo, simulasi kredit, trade in, dan test drive Toyota.">
 
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/responsive.css">
-<link rel="stylesheet" href="css/animation.css">
+<meta name="theme-color" content="#EB0A1E">
+
+<link rel="icon" href="favicon.ico">
+<link rel="manifest" href="manifest.json">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,11 +23,21 @@ content="Hubungi Hendra Gunawan Sales Consultant Setiajaya Toyota untuk promo To
 
 <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
 
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="responsive.css">
+<link rel="stylesheet" href="animation.css">
+
 </head>
 
 <body>
 
-<div id="loader" class="loader"></div>
+<!-- Loader -->
+
+<div id="loader">
+    <div class="spinner"></div>
+</div>
+
+<!-- Header -->
 
 <header class="header">
 
@@ -34,7 +45,7 @@ content="Hubungi Hendra Gunawan Sales Consultant Setiajaya Toyota untuk promo To
 
 <a href="index.html" class="logo">
 
-<img src="img/logo/toyota-logo.png" alt="Toyota Logo">
+<img src="img/logo/toyota-logo.png" alt="Toyota">
 
 <div>
 
@@ -53,33 +64,27 @@ content="Hubungi Hendra Gunawan Sales Consultant Setiajaya Toyota untuk promo To
 <a href="promo.html">Promo</a>
 <a href="simulasi.html">Simulasi</a>
 <a href="tentang.html">Tentang</a>
-<a href="kontak.html" class="active">Kontak</a>
+<a class="active" href="kontak.html">Kontak</a>
 
 </nav>
 
-<div class="header-button">
+<div class="header-action">
 
-<a href="tel:08159413441" class="btn-call">
+<a href="tel:08159413441" class="call">
 
 <i class="ri-phone-fill"></i>
 
-Telepon
-
 </a>
 
-<a href="https://wa.me/628159413441"
-
-class="btn-wa">
+<a href="https://wa.me/628159413441" class="wa">
 
 <i class="ri-whatsapp-fill"></i>
-
-WhatsApp
 
 </a>
 
 <button id="menu-toggle">
 
-<i class="ri-menu-3-line"></i>
+<i class="ri-menu-line"></i>
 
 </button>
 
@@ -89,171 +94,187 @@ WhatsApp
 
 </header>
 
-<section class="hero">
+<!-- Hero -->
 
-<div class="container hero-container">
+<section class="page-hero">
 
-<div class="hero-content">
+<div class="overlay"></div>
 
-<span class="badge">
-
-HUBUNGI SAYA
-
-</span>
+<div class="container">
 
 <h1>
 
-Siap Membantu Pembelian Toyota Anda
+Hubungi Kami
 
 </h1>
 
 <p>
 
-Hubungi saya untuk mendapatkan
-promo terbaru, simulasi kredit,
-jadwal test drive,
-serta informasi lengkap mengenai
-mobil Toyota.
+Kami siap membantu Anda memilih Toyota yang sesuai kebutuhan.
 
 </p>
 
-<a href="https://wa.me/628159413441"
-
-class="btn">
-
-Chat WhatsApp
-
-</a>
-
-</div>
-
-<div class="hero-image">
-
-<img src="img/contact/contact.webp"
-
-alt="Hendra Gunawan"
-
-class="float">
-
-</div>
-
 </div>
 
 </section>
 
-<section class="contact-home">
+<!-- CONTACT -->
 
-<div class="container">
-
-<div class="contact-card">
-
-<h2>
-
-Informasi Kontak
-
-</h2>
-
-<ul>
-
-<li>
-
-📞 <strong>WhatsApp</strong><br>
-
-0815-9413-441
-
-</li>
-
-<li>
-
-📷 <strong>Instagram</strong><br>
-
-@hengun_blue
-
-</li>
-
-<li>
-
-🎵 <strong>TikTok</strong><br>
-
-@hengun54
-
-</li>
-
-<li>
-
-📍 <strong>Area Layanan</strong><br>
-
-Jabodetabek
-
-</li>
-
-</ul>
-
-<a href="https://wa.me/628159413441"
-
-class="btn">
-
-Hubungi Sekarang
-
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="contact-form">
+<section class="contact">
 
 <div class="container">
 
 <div class="section-title">
 
-<span>KIRIM PESAN</span>
+<span>KONTAK</span>
 
-<h2>Konsultasi Gratis</h2>
+<h2>
+
+Hubungi Hendra Gunawan
+
+</h2>
 
 <p>
 
-Isi formulir di bawah ini, lalu kirim melalui WhatsApp.
+Silakan hubungi kami melalui WhatsApp, telepon, atau datang langsung ke dealer.
 
 </p>
 
 </div>
 
-<form class="card">
+<div class="contact-grid">
 
-<input
-type="text"
+<div class="contact-info reveal">
+
+<div class="contact-item">
+
+<i class="ri-phone-fill"></i>
+
+<div>
+
+<h3>Telepon</h3>
+
+<p>0815-9413-4441</p>
+
+</div>
+
+</div>
+
+<div class="contact-item">
+
+<i class="ri-whatsapp-fill"></i>
+
+<div>
+
+<h3>WhatsApp</h3>
+
+<p>0815-9413-4441</p>
+
+</div>
+
+</div>
+
+<div class="contact-item">
+
+<i class="ri-map-pin-fill"></i>
+
+<div>
+
+<h3>Dealer</h3>
+
+<p>Setiajaya Toyota Parung</p>
+
+</div>
+
+</div>
+
+<div class="contact-item">
+
+<i class="ri-instagram-fill"></i>
+
+<div>
+
+<h3>Instagram</h3>
+
+<p>@hengun_blue</p>
+
+</div>
+
+</div>
+
+<div class="contact-item">
+
+<i class="ri-tiktok-fill"></i>
+
+<div>
+
+<h3>TikTok</h3>
+
+<p>@hengun54</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="contact-form reveal">
+
+<form action="#">
+
+<div class="form-group">
+
+<input type="text"
+
 placeholder="Nama Lengkap"
+
 required>
 
-<input
-type="tel"
+</div>
+
+<div class="form-group">
+
+<input type="tel"
+
 placeholder="Nomor WhatsApp"
+
 required>
+
+</div>
+
+<div class="form-group">
 
 <select>
 
-<option>Calya</option>
-<option>Avanza</option>
-<option>Veloz</option>
+<option>Toyota Calya</option>
+
+<option>Toyota Avanza</option>
+
+<option>Toyota Veloz</option>
+
 <option>Innova Reborn</option>
+
 <option>Innova Zenix</option>
-<option>Alphard</option>
+
+<option>Toyota Alphard</option>
 
 </select>
 
-<textarea
-rows="6"
-placeholder="Tulis pertanyaan Anda..."></textarea>
+</div>
 
-<button
-type="button"
-class="btn"
-onclick="window.open('https://wa.me/628159413441')">
+<div class="form-group">
 
-Kirim via WhatsApp
+<textarea rows="5"
+
+placeholder="Tulis kebutuhan Anda..."></textarea>
+
+</div>
+
+<button type="submit"
+
+class="btn">
+
+Kirim Pesan
 
 </button>
 
@@ -261,10 +282,14 @@ Kirim via WhatsApp
 
 </div>
 
+</div>
+
+</div>
+
 </section>
-<!-- =========================================
-     GOOGLE MAPS
-========================================= -->
+<!-- ========================================= -->
+<!-- GOOGLE MAPS -->
+<!-- ========================================= -->
 
 <section class="maps">
 
@@ -277,20 +302,21 @@ Kirim via WhatsApp
             <h2>Kunjungi Showroom Kami</h2>
 
             <p>
-                Anda juga dapat datang langsung ke showroom
-                Setiajaya Toyota untuk melihat unit, berkonsultasi,
-                atau melakukan test drive.
+
+                Datang langsung ke Setiajaya Toyota Parung untuk melihat
+                unit display dan melakukan test drive.
+
             </p>
 
         </div>
 
-        <div class="card">
+        <div class="map-box reveal">
 
             <iframe
                 src="https://www.google.com/maps?q=Setiajaya+Toyota+Parung&output=embed"
                 width="100%"
                 height="450"
-                style="border:0;border-radius:20px;"
+                style="border:0;"
                 loading="lazy"
                 allowfullscreen>
             </iframe>
@@ -301,59 +327,11 @@ Kirim via WhatsApp
 
 </section>
 
-<!-- =========================================
-     GALERI CUSTOMER
-========================================= -->
+<!-- ========================================= -->
+<!-- JAM OPERASIONAL -->
+<!-- ========================================= -->
 
-<section class="gallery">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <span>GALERI</span>
-
-            <h2>Dokumentasi Bersama Customer</h2>
-
-        </div>
-
-        <div class="products-grid">
-
-            <div class="product-card reveal">
-                <img src="img/contact/customer-1.webp" alt="Customer 1">
-            </div>
-
-            <div class="product-card reveal">
-                <img src="img/contact/customer-2.webp" alt="Customer 2">
-            </div>
-
-            <div class="product-card reveal">
-                <img src="img/contact/customer-3.webp" alt="Customer 3">
-            </div>
-
-            <div class="product-card reveal">
-                <img src="img/contact/customer-4.webp" alt="Customer 4">
-            </div>
-
-            <div class="product-card reveal">
-                <img src="img/contact/customer-5.webp" alt="Customer 5">
-            </div>
-
-            <div class="product-card reveal">
-                <img src="img/contact/customer-6.webp" alt="Customer 6">
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- =========================================
-     JAM OPERASIONAL
-========================================= -->
-
-<section class="why">
+<section class="services">
 
     <div class="container">
 
@@ -361,13 +339,13 @@ Kirim via WhatsApp
 
             <span>JAM OPERASIONAL</span>
 
-            <h2>Siap Melayani Anda</h2>
+            <h2>Kami Siap Melayani Anda</h2>
 
         </div>
 
-        <div class="why-grid">
+        <div class="services-grid">
 
-            <div class="why-card">
+            <div class="service-card reveal">
 
                 <i class="ri-time-fill"></i>
 
@@ -377,23 +355,23 @@ Kirim via WhatsApp
 
             </div>
 
-            <div class="why-card">
+            <div class="service-card reveal">
 
-                <i class="ri-calendar-check-fill"></i>
+                <i class="ri-time-fill"></i>
 
                 <h3>Sabtu</h3>
 
-                <p>08.00 - 15.00 WIB</p>
+                <p>08.00 - 16.00 WIB</p>
 
             </div>
 
-            <div class="why-card">
+            <div class="service-card reveal">
 
-                <i class="ri-whatsapp-fill"></i>
+                <i class="ri-phone-fill"></i>
 
-                <h3>WhatsApp</h3>
+                <h3>Konsultasi Online</h3>
 
-                <p>Fast Response Setiap Hari</p>
+                <p>WhatsApp siap melayani setiap hari.</p>
 
             </div>
 
@@ -403,15 +381,15 @@ Kirim via WhatsApp
 
 </section>
 
-<!-- =========================================
-     CTA
-========================================= -->
+<!-- ========================================= -->
+<!-- CTA -->
+<!-- ========================================= -->
 
 <section class="cta">
 
     <div class="container">
 
-        <div class="cta-box">
+        <div class="cta-box reveal">
 
             <h2>
 
@@ -421,20 +399,30 @@ Kirim via WhatsApp
 
             <p>
 
-                Hubungi Hendra Gunawan sekarang juga
-                untuk mendapatkan promo terbaik,
-                simulasi kredit,
-                dan jadwal test drive.
+                Hubungi Hendra Gunawan sekarang untuk mendapatkan
+                promo terbaru, simulasi kredit, dan jadwal test drive.
 
             </p>
 
-            <a href="https://wa.me/628159413441"
+            <div class="cta-button">
 
-            class="btn">
+                <a href="https://wa.me/628159413441?text=Halo Pak Hendra, saya ingin informasi Toyota."
 
-                Chat WhatsApp
+                class="btn">
 
-            </a>
+                    Chat WhatsApp
+
+                </a>
+
+                <a href="tel:08159413441"
+
+                class="btn-outline">
+
+                    Telepon Sekarang
+
+                </a>
+
+            </div>
 
         </div>
 
@@ -442,11 +430,11 @@ Kirim via WhatsApp
 
 </section>
 
-<!-- =========================================
-     FOOTER
-========================================= -->
+<!-- ========================================= -->
+<!-- FOOTER -->
+<!-- ========================================= -->
 
-<footer>
+<footer class="footer">
 
     <div class="container footer-grid">
 
@@ -454,9 +442,12 @@ Kirim via WhatsApp
 
             <h3>Setiajaya Toyota</h3>
 
-            <p>Hendra Gunawan</p>
+            <p>
 
-            <p>Sales Consultant</p>
+                Dealer resmi Toyota yang melayani pembelian tunai,
+                kredit, trade in, dan test drive untuk wilayah Jabodetabek.
+
+            </p>
 
         </div>
 
@@ -464,10 +455,16 @@ Kirim via WhatsApp
 
             <h3>Menu</h3>
 
-            <a href="index.html">Home</a><br>
-            <a href="produk.html">Produk</a><br>
-            <a href="promo.html">Promo</a><br>
-            <a href="simulasi.html">Simulasi</a>
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produk.html">Produk</a></li>
+                <li><a href="promo.html">Promo</a></li>
+                <li><a href="simulasi.html">Simulasi</a></li>
+                <li><a href="tentang.html">Tentang</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+
+            </ul>
 
         </div>
 
@@ -475,51 +472,81 @@ Kirim via WhatsApp
 
             <h3>Kontak</h3>
 
-            <p>📞 0815-9413-441</p>
+            <ul>
 
-            <p>📷 @hengun_blue</p>
+                <li>📞 0815-9413-4441</li>
+                <li>📍 Setiajaya Toyota Parung</li>
+                <li>📱 WhatsApp: 0815-9413-4441</li>
+                <li>📧 sales@setiajayatoyota.com</li>
 
-            <p>🎵 @hengun54</p>
+            </ul>
+
+        </div>
+
+        <div>
+
+            <h3>Ikuti Kami</h3>
+
+            <div class="social">
+
+                <a href="https://instagram.com/hengun_blue" target="_blank">
+
+                    <i class="ri-instagram-line"></i>
+
+                </a>
+
+                <a href="https://www.tiktok.com/@hengun54" target="_blank">
+
+                    <i class="ri-tiktok-line"></i>
+
+                </a>
+
+                <a href="https://wa.me/628159413441" target="_blank">
+
+                    <i class="ri-whatsapp-line"></i>
+
+                </a>
+
+            </div>
 
         </div>
 
     </div>
 
-    <div class="copyright">
+    <div class="footer-bottom">
 
-        © 2026 Hendra Gunawan • Sales Consultant Setiajaya Toyota
+        <p>
+
+            © 2026 Hendra Gunawan | Sales Consultant Setiajaya Toyota.
+            All Rights Reserved.
+
+        </p>
 
     </div>
 
 </footer>
 
-<!-- Floating Button -->
+<!-- Floating WhatsApp -->
 
-<a href="https://wa.me/628159413441"
-
+<a href="https://wa.me/628159413441?text=Halo Pak Hendra, saya ingin informasi Toyota."
 class="floating-wa"
-
 target="_blank">
 
-💬
+    <i class="ri-whatsapp-fill"></i>
 
 </a>
 
-<a href="tel:08159413441"
-
-class="floating-call">
-
-📞
-
-</a>
+<!-- Back To Top -->
 
 <button id="backToTop">
 
-↑
+    <i class="ri-arrow-up-line"></i>
 
 </button>
 
-<script src="js/script.js"></script>
+<!-- Script -->
+
+<script src="script.js"></script>
 
 </body>
 
