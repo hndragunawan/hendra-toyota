@@ -36,7 +36,24 @@ content="Hitung estimasi DP dan cicilan Toyota dengan simulasi kredit online ber
 
   gtag('config', 'AW-18361617951');
 </script>
-    
+   <script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+
+  gtag('event', 'conversion', {
+    'send_to': 'AW-18361617951/dse-CLKhrtkcEJ-cwLNE',
+    'value': 1.0,
+    'currency': 'IDR',
+    'event_callback': callback
+  });
+
+  return false;
+}
+</script> 
 </head>
 
 <body>
